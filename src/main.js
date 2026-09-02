@@ -313,6 +313,20 @@ async function init() {
     // loop burning behind a hidden tab. (perf wave 2 fix)
     syncVisibilitySuspension();
 
+    const flyToDegrees = (
+    latitude,
+    longitude,
+    altitudeMeters = 25000
+    ) => {
+    viewer.camera.flyTo({
+    destination: Cesium.Cartesian3.fromDegrees(
+      longitude,
+      latitude,
+      altitudeMeters
+    ),
+    duration: 1.5,
+    });
+    };
     window.__godsEyeView = {
       viewer,
       styleManager,
@@ -323,6 +337,9 @@ async function init() {
       annotations,
       weatherEffects,
       cockpitCloudEffects,
+
+      flyToDegrees,
+
       getRenderGovernorDiagnostics,
       requestRender: governorRequestRender,
     };

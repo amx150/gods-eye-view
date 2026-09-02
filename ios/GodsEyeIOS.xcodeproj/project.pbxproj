@@ -1,0 +1,330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C563D124204656A04F1D8D2 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B9B65993F1EAC31561E0E /* AppConfiguration.swift */; };
+		7D49BE09FD2998A5C3D8CC8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C343A6E5FEC79D54FBCEBCB /* ContentView.swift */; };
+		C409232FA2371095E37F7907 /* CesiumBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA0615EBB864211704B1D6 /* CesiumBridge.swift */; };
+		CAC810D629887509F4206BC3 /* CesiumWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396C5DE0C9F1485B88631D8 /* CesiumWebView.swift */; };
+		FCF70A48AAFF219DC230426F /* GodsEyeIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB14AA4F9AD71731BE864845 /* GodsEyeIOSApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0396C5DE0C9F1485B88631D8 /* CesiumWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CesiumWebView.swift; sourceTree = "<group>"; };
+		1CA69A3444357F1D7225CB36 /* GodsEyeIOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = GodsEyeIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C343A6E5FEC79D54FBCEBCB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		505B9B65993F1EAC31561E0E /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		BB14AA4F9AD71731BE864845 /* GodsEyeIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GodsEyeIOSApp.swift; sourceTree = "<group>"; };
+		DAFA0615EBB864211704B1D6 /* CesiumBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CesiumBridge.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		01264528002564A9109114CC = {
+			isa = PBXGroup;
+			children = (
+				9ADBF3E59E8D77865EF2FD9A /* GodsEyeIOS */,
+				2097211C88B94C927D3BB93B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2097211C88B94C927D3BB93B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CA69A3444357F1D7225CB36 /* GodsEyeIOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7842B3EBD3426883A6F7F05C /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				505B9B65993F1EAC31561E0E /* AppConfiguration.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		899F822EBF49B5DC19150AAB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2C343A6E5FEC79D54FBCEBCB /* ContentView.swift */,
+				BB14AA4F9AD71731BE864845 /* GodsEyeIOSApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9ADBF3E59E8D77865EF2FD9A /* GodsEyeIOS */ = {
+			isa = PBXGroup;
+			children = (
+				899F822EBF49B5DC19150AAB /* App */,
+				E3337E9DF979FC3581AEFF75 /* Cesium */,
+				7842B3EBD3426883A6F7F05C /* Config */,
+			);
+			path = GodsEyeIOS;
+			sourceTree = "<group>";
+		};
+		E3337E9DF979FC3581AEFF75 /* Cesium */ = {
+			isa = PBXGroup;
+			children = (
+				DAFA0615EBB864211704B1D6 /* CesiumBridge.swift */,
+				0396C5DE0C9F1485B88631D8 /* CesiumWebView.swift */,
+			);
+			path = Cesium;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6BC491FA63EC4EE1985FFD74 /* GodsEyeIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA967D7C6B4661A349E73F13 /* Build configuration list for PBXNativeTarget "GodsEyeIOS" */;
+			buildPhases = (
+				E3E1BE31A6DE77E79644AD1D /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GodsEyeIOS;
+			packageProductDependencies = (
+			);
+			productName = GodsEyeIOS;
+			productReference = 1CA69A3444357F1D7225CB36 /* GodsEyeIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02AE3A885B9F6E8DFB7E8047 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 46B3F7A519ABAEADEF6C213E /* Build configuration list for PBXProject "GodsEyeIOS" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 01264528002564A9109114CC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2097211C88B94C927D3BB93B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BC491FA63EC4EE1985FFD74 /* GodsEyeIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3E1BE31A6DE77E79644AD1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C563D124204656A04F1D8D2 /* AppConfiguration.swift in Sources */,
+				C409232FA2371095E37F7907 /* CesiumBridge.swift in Sources */,
+				CAC810D629887509F4206BC3 /* CesiumWebView.swift in Sources */,
+				7D49BE09FD2998A5C3D8CC8F /* ContentView.swift in Sources */,
+				FCF70A48AAFF219DC230426F /* GodsEyeIOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		17CD773FA74657922CB9545C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GodsEyeIOS/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_NAME = GodsEye;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		2E4D771CF43D68166D42EEF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GodsEyeIOS/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_NAME = GodsEye;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		409C623C71760BA58DFDD9EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amx150.godseye.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		76D8B3D24F019DBE3BE08FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amx150.godseye.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46B3F7A519ABAEADEF6C213E /* Build configuration list for PBXProject "GodsEyeIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76D8B3D24F019DBE3BE08FA6 /* Debug */,
+				409C623C71760BA58DFDD9EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EA967D7C6B4661A349E73F13 /* Build configuration list for PBXNativeTarget "GodsEyeIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E4D771CF43D68166D42EEF1 /* Debug */,
+				17CD773FA74657922CB9545C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02AE3A885B9F6E8DFB7E8047 /* Project object */;
+}
