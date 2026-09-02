@@ -9517,3 +9517,9 @@ body.scene-playback-mode #key-setup {
   border-color: rgba(255, 170, 150, 0.65);
   outline: none;
 }
+
+/* ── iOS native shell ─────────────────────────── */
+
+html.gev-ios #clean-view-exit {
+  display: none !important;
+}

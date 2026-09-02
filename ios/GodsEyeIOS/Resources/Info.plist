@@ -18,5 +18,9 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+        <key>NSLocationWhenInUseUsageDescription</key>
+        <string>Usamos sua localização para centralizar o mapa e mostrar aeronaves e eventos próximos.</string>
+
+
 </dict>
 </plist>

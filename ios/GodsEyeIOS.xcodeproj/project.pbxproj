@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C563D124204656A04F1D8D2 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B9B65993F1EAC31561E0E /* AppConfiguration.swift */; };
+		50A9C43D30486A6F007FF6D4 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A9C43C30486A6C007FF6D4 /* LocationManager.swift */; };
 		7D49BE09FD2998A5C3D8CC8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C343A6E5FEC79D54FBCEBCB /* ContentView.swift */; };
 		C409232FA2371095E37F7907 /* CesiumBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA0615EBB864211704B1D6 /* CesiumBridge.swift */; };
 		CAC810D629887509F4206BC3 /* CesiumWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396C5DE0C9F1485B88631D8 /* CesiumWebView.swift */; };
@@ -16,9 +17,10 @@
 
 /* Begin PBXFileReference section */
 		0396C5DE0C9F1485B88631D8 /* CesiumWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CesiumWebView.swift; sourceTree = "<group>"; };
-		1CA69A3444357F1D7225CB36 /* GodsEyeIOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = GodsEyeIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CA69A3444357F1D7225CB36 /* GodsEyeIOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; name = GodsEyeIOS.app; path = GodsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C343A6E5FEC79D54FBCEBCB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		505B9B65993F1EAC31561E0E /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		50A9C43C30486A6C007FF6D4 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		BB14AA4F9AD71731BE864845 /* GodsEyeIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GodsEyeIOSApp.swift; sourceTree = "<group>"; };
 		DAFA0615EBB864211704B1D6 /* CesiumBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CesiumBridge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +40,14 @@
 				1CA69A3444357F1D7225CB36 /* GodsEyeIOS.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		50A9C43B3048694C007FF6D4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				50A9C43C30486A6C007FF6D4 /* LocationManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		7842B3EBD3426883A6F7F05C /* Config */ = {
@@ -60,6 +70,7 @@
 		9ADBF3E59E8D77865EF2FD9A /* GodsEyeIOS */ = {
 			isa = PBXGroup;
 			children = (
+				50A9C43B3048694C007FF6D4 /* Services */,
 				899F822EBF49B5DC19150AAB /* App */,
 				E3337E9DF979FC3581AEFF75 /* Cesium */,
 				7842B3EBD3426883A6F7F05C /* Config */,
@@ -104,8 +115,6 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = 46B3F7A519ABAEADEF6C213E /* Build configuration list for PBXProject "GodsEyeIOS" */;
 			developmentRegion = en;
@@ -133,6 +142,7 @@
 			files = (
 				4C563D124204656A04F1D8D2 /* AppConfiguration.swift in Sources */,
 				C409232FA2371095E37F7907 /* CesiumBridge.swift in Sources */,
+				50A9C43D30486A6F007FF6D4 /* LocationManager.swift in Sources */,
 				CAC810D629887509F4206BC3 /* CesiumWebView.swift in Sources */,
 				7D49BE09FD2998A5C3D8CC8F /* ContentView.swift in Sources */,
 				FCF70A48AAFF219DC230426F /* GodsEyeIOSApp.swift in Sources */,

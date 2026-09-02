@@ -1,7 +1,6 @@
 import * as Cesium from 'cesium';
 import { StyleManager } from './ui.js';
 import { flyToAustin } from './camera.js';
-import { installIOSBridge } from './iosBridge.js';
 import { DataLayerManager } from './data/manager.js';
 import flightsLayer from './data/flights.js';
 import militaryFlightsLayer from './data/militaryFlights.js';
@@ -314,20 +313,6 @@ async function init() {
     // loop burning behind a hidden tab. (perf wave 2 fix)
     syncVisibilitySuspension();
 
-    const flyToDegrees = (
-    latitude,
-    longitude,
-    altitudeMeters = 25000
-    ) => {
-    viewer.camera.flyTo({
-    destination: Cesium.Cartesian3.fromDegrees(
-      longitude,
-      latitude,
-      altitudeMeters
-    ),
-    duration: 1.5,
-    });
-    };
     window.__godsEyeView = {
       viewer,
       styleManager,
@@ -338,21 +323,10 @@ async function init() {
       annotations,
       weatherEffects,
       cockpitCloudEffects,
-
-      flyToDegrees,
-
       getRenderGovernorDiagnostics,
       requestRender: governorRequestRender,
     };
     window.__godsEyeView.voiceCommands = initGevVoiceCommands({ viewer, styleManager, dataManager, sceneDirector, annotations });
-
-    if (window.__GEV_IOS__) {
-  installIOSBridge({
-    dataManager,
-    flightsLayer,
-  });
-  
-  }
 
   } catch (error) {
     console.error("God's Eye View initialization failed:", error);

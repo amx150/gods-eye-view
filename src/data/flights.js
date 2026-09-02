@@ -4965,6 +4965,9 @@ const flightsLayer = {
         altitudeM: info?.altitude ?? null,
         velocityMps: info?.velocity ?? null,
         track: info?.true_track ?? null,
+
+        onGround: info?.onGround === true,
+
       });
     }
 
